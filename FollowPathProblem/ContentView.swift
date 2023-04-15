@@ -9,12 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State private var currentValue: Double = 50
+    let lowerBound: Double = 0
+    let upperBound: Double = 100
+
     var body: some View {
         VStack {
             // TODO: - Make it accept an upper bound, lower bound and a current value
             // Like this: FollowPathView(lowerBound: 0, upperBound: 100, currentValue: 50)
             FollowPathView(lowerBound: 0, upperBound: 100, currentValue: 50)
+            // TODO: - Move image with slider.
+            Slider(value: $currentValue, in: lowerBound...upperBound)
         }
+        .padding()
     }
 }
 
