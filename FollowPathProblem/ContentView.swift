@@ -32,7 +32,7 @@ struct FollowPathView: View {
     let lowerBound: Double
     // end of the path
     let upperBound: Double
-    // 50 will be middle of the path, but it can be anything between 0-100 and that's where the `circle.circle.fill` should be and there needs to be no animation. Do not replace Image with anything or any Shape.
+    // 50 will be middle of the path, but it can be anything between 0-100 and that's where the `car.fill` should be and there needs to be no animation. Do not replace Image with anything or any Shape.
     let currentValue: Double
     
     var body: some View {
